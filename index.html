@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="asset/css/reset.css" />
+    <link rel="stylesheet" href="asset/css/main.css" />
+  </head>
+  <body>
+    <section class="cont-wrapper">
+      <!-- header -->
+      <header class="header">
+        <h1 class="tit-logo">
+          <img src="./asset/img/logo.png" alt="Colacola logo" class="tit-img" />
+        </h1>
+      </header>
+
+      <main class="vanding_machine clear_fix">
+        <!-- cont-vanding_buy START -->
+        <section class="cont-vanding_buy">
+          <h2 class="blind">자판기 화면</h2>
+          <section class="buy-list">
+            <h4 class="blind">자판기 음료 메뉴</h4>
+            <button class="buy-item">
+              <img
+                src="asset/img/original_cola.png"
+                alt="오리지널 콜라"
+                class="buy-img"
+              />
+              <p class="buy-name">Original_Cola</p>
+              <p class="buy-price">1000원</p>
+            </button>
+            <button class="buy-item">
+              <div class="sold_out">
+                <img src="./asset/img/sold_out.png" alt="품절" />
+              </div>
+              <img
+                src="asset/img/violet_cola.png"
+                alt="바이올렛 콜라"
+                class="buy-img"
+              />
+              <p class="buy-name">Violet_Cola</p>
+              <p class="buy-price">1000원</p>
+            </button>
+            <button class="buy-item">
+              <img
+                src="asset/img/yellow_cola.png"
+                alt="옐로우 콜라"
+                class="buy-img"
+              />
+              <p class="buy-name">Yellow_Cola</p>
+              <p class="buy-price">1000원</p>
+            </button>
+            <button class="buy-item">
+              <img
+                src="asset/img/cool_cola.png"
+                alt="쿨 콜라"
+                class="buy-img"
+              />
+              <p class="buy-name">Cool_Cola</p>
+              <p class="buy-price">1000원</p>
+            </button>
+            <button class="buy-item">
+              <img
+                src="asset/img/green_cola.png"
+                alt="그린 콜라"
+                class="buy-img"
+              />
+              <p class="buy-name">Green_Cola</p>
+              <p class="buy-price">1000원</p>
+            </button>
+            <button class="buy-item">
+              <img
+                src="asset/img/orange_cola.png"
+                alt="오렌지 콜라"
+                class="buy-img"
+              />
+              <p class="buy-name">Orange_Cola</p>
+              <p class="buy-price">1000원</p>
+            </button>
+          </section>
+          <!-- cont-vanding_buy END -->
+
+          <!-- cont-return START -->
+          <section class="cont-return clear_fix">
+            <h4 class="blind">현재 잔액과 거스름돈 반환 버튼</h4>
+            <div class="return-change clear_fix">
+              잔액:<span class="return-won">1,000원</span>
+            </div>
+            <button type="button" class="return-btn">거스름돈 반환</button>
+          </section>
+          <!-- cont-return END -->
+
+          <!-- cont-deposit START -->
+          <section class="cont-deposit clear_fix">
+            <h4 class="blind">입금액 입력과 입력 버튼</h4>
+            <input
+              type="number"
+              placeholder="입금액 입력"
+              class="deposit-input"
+            />
+            <button type="button" class="deposit-btn">입금</button>
+          </section>
+          <!-- cont-deposit END -->
+
+          <!-- cont-cart START -->
+          <section class="cont-cart clear_fix">
+            <h4 class="blind">장바구니 현황과 획득 버튼</h4>
+            <ul class="cart-list">
+              <li class="cart-list-item">
+                <img
+                  src="./asset/img/original_cola.png"
+                  alt="장바구니 추가된 오리지널 콜라"
+                  class="cart-added-item-img"
+                />
+                <p>Original_Cola</p>
+                <span class="cart-count">1</span>
+              </li>
+              <li class="cart-list-item">
+                <img
+                  src="./asset/img/green_cola.png"
+                  alt="장바구니 추가된 그린 콜라"
+                  class="cart-added-item-img"
+                />
+                <p>Green_Cola</p>
+                <span class="cart-count">2</span>
+              </li>
+            </ul>
+            <button type="button" class="cart-btn">획득</button>
+          </section>
+          <!-- cont-cart END -->
+        </section>
+
+        <!-- cont-vanding_get START -->
+        <section class="cont-vanding_get">
+          <h2 class="blind">나의 정보 화면</h2>
+
+          <!-- cont-money START -->
+          <section class="cont-money">
+            <h4 class="blind">소지금</h4>
+            <div class="money-have clear_fix">
+              소지금:<span class="money-won">25,000원</span>
+            </div>
+          </section>
+          <!-- cont-money END -->
+
+          <!-- cont-got_drinks START -->
+          <section class="cont-got_drinks">
+            <h2 class="got_drink-tit">획득한 음료</h2>
+            <ul class="got_drink-list">
+              <li class="cont-list-item">
+                <div class="cont-item-info">
+                  <img
+                    src="./asset/img/original_cola.png"
+                    alt="획득한 오리지널 콜라"
+                    class="cont-added-item-img"
+                  />
+                  <p class="cont-item-name">Original_Cola</p>
+                </div>
+                <span class="cont-count">1</span>
+              </li>
+              <li class="cont-list-item">
+                <div class="cont-item-info">
+                  <img
+                    src="./asset/img/green_cola.png"
+                    alt="획득한 오리지널 콜라"
+                    class="cont-added-item-img"
+                  />
+                  <p class="cont-item-name">Green_Cola</p>
+                </div>
+                <span class="cont-count">2</span>
+              </li>
+              <li class="cont-list-item">
+                <div class="cont-item-info">
+                  <img
+                    src="./asset/img/orange_cola.png"
+                    alt="획득한 오리지널 콜라"
+                    class="cont-added-item-img"
+                  />
+                  <p class="cont-item-name">Orange_Cola</p>
+                </div>
+                <span class="cont-count">1</span>
+              </li>
+              <li class="cont-list-item">
+                <div class="cont-item-info">
+                  <img
+                    src="./asset/img/violet_cola.png"
+                    alt="획득한 오리지널 콜라"
+                    class="cont-added-item-img"
+                  />
+                  <p class="cont-item-name">Violet_Cola</p>
+                </div>
+                <span class="cont-count">5</span>
+              </li>
+            </ul>
+            <p class="got_drink-total clear_fix">
+              총금액 : <span class="got_drink-won">9,000</span>원
+            </p>
+          </section>
+          <!-- cont-got_drinks END -->
+        </section>
+        <!-- cont-vanding_get END -->
+      </main>
+    </section>
+  </body>
+</html>
