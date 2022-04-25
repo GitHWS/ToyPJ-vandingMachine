@@ -17,7 +17,8 @@
         </h1>
       </header>
 
-      <main class="vanding_machine clear_fix">
+      <div class="vanding_machine clear_fix">
+        <h2 class="blind">자판기</h2>
         <!-- cont-vanding_buy START -->
         <section class="cont-vanding_buy">
           <h2 class="blind">자판기 화면</h2>
@@ -29,20 +30,24 @@
                 alt="오리지널 콜라"
                 class="buy-img"
               />
-              <p class="buy-name">Original_Cola</p>
-              <p class="buy-price">1000원</p>
+              <span class="buy-name">Original_Cola</span>
+              <span class="buy-price">1000원</span>
             </button>
             <button class="buy-item">
-              <div class="sold_out">
-                <img src="./asset/img/sold_out.png" alt="품절" />
-              </div>
+              <span class="solid_out">
+                <img
+                  src="./asset/img/sold_out.png"
+                  class="sold_out_img"
+                  alt="품절"
+                />
+              </span>
               <img
                 src="asset/img/violet_cola.png"
                 alt="바이올렛 콜라"
                 class="buy-img"
               />
-              <p class="buy-name">Violet_Cola</p>
-              <p class="buy-price">1000원</p>
+              <span class="buy-name">Violet_Cola</span>
+              <span class="buy-price">1000원</span>
             </button>
             <button class="buy-item">
               <img
@@ -50,8 +55,8 @@
                 alt="옐로우 콜라"
                 class="buy-img"
               />
-              <p class="buy-name">Yellow_Cola</p>
-              <p class="buy-price">1000원</p>
+              <span class="buy-name">Yellow_Cola</span>
+              <span class="buy-price">1000원</span>
             </button>
             <button class="buy-item">
               <img
@@ -59,8 +64,8 @@
                 alt="쿨 콜라"
                 class="buy-img"
               />
-              <p class="buy-name">Cool_Cola</p>
-              <p class="buy-price">1000원</p>
+              <span class="buy-name">Cool_Cola</span>
+              <span class="buy-price">1000원</span>
             </button>
             <button class="buy-item">
               <img
@@ -68,8 +73,8 @@
                 alt="그린 콜라"
                 class="buy-img"
               />
-              <p class="buy-name">Green_Cola</p>
-              <p class="buy-price">1000원</p>
+              <span class="buy-name">Green_Cola</span>
+              <span class="buy-price">1000원</span>
             </button>
             <button class="buy-item">
               <img
@@ -77,8 +82,8 @@
                 alt="오렌지 콜라"
                 class="buy-img"
               />
-              <p class="buy-name">Orange_Cola</p>
-              <p class="buy-price">1000원</p>
+              <span class="buy-name">Orange_Cola</span>
+              <span class="buy-price">1000원</span>
             </button>
           </section>
           <!-- cont-vanding_buy END -->
@@ -147,7 +152,7 @@
           <!-- cont-money END -->
 
           <!-- cont-got_drinks START -->
-          <section class="cont-got_drinks">
+          <section class="cont-got_drinks clear_fix">
             <h2 class="got_drink-tit">획득한 음료</h2>
             <ul class="got_drink-list">
               <li class="cont-list-item">
@@ -195,14 +200,14 @@
                 <span class="cont-count">5</span>
               </li>
             </ul>
-            <p class="got_drink-total clear_fix">
+            <p class="got_drink-total">
               총금액 : <span class="got_drink-won">9,000</span>원
             </p>
           </section>
           <!-- cont-got_drinks END -->
         </section>
         <!-- cont-vanding_get END -->
-      </main>
+      </div>
     </section>
   </body>
 </html>

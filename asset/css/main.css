@@ -22,16 +22,21 @@ body {
   clear: both;
 }
 
-.sold_out {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.solid_out {
   position: absolute;
   top: 0;
   left: 0;
+  display: block;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
+}
+
+.sold_out_img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* header */
@@ -51,7 +56,8 @@ body {
   margin: 0 auto;
 }
 
-main section {
+div > section.cont-vanding_buy,
+div > section.cont-vanding_get {
   float: left;
 }
 
@@ -89,6 +95,7 @@ main section {
 }
 
 .buy-name {
+  display: block;
   margin-bottom: 7px;
   font-weight: 500;
   font-size: 9px;
@@ -96,6 +103,7 @@ main section {
 }
 
 .buy-price {
+  display: block;
   padding: 5px 16px 5px 15px;
   background-color: #6327fe;
   border-radius: 50px;
@@ -235,7 +243,6 @@ main section {
 /* vanding_get */
 
 .cont-vanding_get {
-  padding: 6px 8px 7px 10px;
   width: 360px;
 }
 
@@ -316,7 +323,7 @@ main section {
 }
 
 .got_drink-list {
-  margin: 0 auto 6px;
+  margin: 0 auto 20px;
   padding: 12px 18px 0 12px;
   background-color: #eae8fe;
   width: 306px;
@@ -331,4 +338,16 @@ main section {
   font-weight: 500;
   font-size: 12px;
   line-height: 17px;
+}
+
+@media (max-width: 800px) {
+  .vanding_machine {
+    width: 360px;
+    margin: 0 auto;
+  }
+
+  div > section.cont-vanding_buy,
+  div > section.cont-vanding_get {
+    float: none;
+  }
 }
